@@ -1,5 +1,5 @@
 import styles from './Home.module.scss';
-import { Breadcrumbs } from '../../components';
+import { Breadcrumbs, EmptyResults } from '../../components';
 import { IProductItems as Props } from '@mercado-livre/shared-types';
 
 import { ListItem } from '../../components';
@@ -9,13 +9,15 @@ export function Home({items}: Props){
     {
       link:'/',
       text:'Página Inicial'
+    },
+    {
+      text:'Destaques'
     }
   ];
-  return <>
+  return <div className={styles.container}>
     <Breadcrumbs items={breadcrumbsItems} />
-    {/* <h3 className={`${styles.container} container`}>Bem vindo, você já pode começar a procurar por produtos!</h3> */}
     <div className="container">
-      { items?.map(item => <ListItem key={item.id} {...item} />) }
+      { items.length ? items.map(item => <ListItem key={item.id} {...item} />) : <EmptyResults /> }
     </div>
-  </>
+  </div>
 }
