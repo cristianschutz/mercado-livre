@@ -10,7 +10,7 @@ This project was generated using [Nx](https://nx.dev).\## Generate a library
 ## Frontend
 The `apps/store` frontend was make using React/Next.js frameworks to assurance SEO optiomization.
 ## Backend
-The `apps/api` backend use Express framework to make available and api who consume mercado-livre api and treat some responses to frontend apps.
+The `apps/api` backend was make using Express framework to request mercado-livre api and treat some responses to frontend apps.
 ## Development server
 
 Run `nx run-many --target=serve --projects=api,store --parallel` for a dev server.
