@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
+
+  small{
+    font-size: 12px;
+    color: $c-gray;
+    text-align: right;
+  }
+}

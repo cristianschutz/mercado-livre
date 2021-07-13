@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.container{
+  background-color: $c-yellow;
+}
+
+.alt{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo{
+  padding-right: 10px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  input{
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    box-shadow: none;
+    font-size: 15px;
+    height: 40px;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  button{
+    align-self: stretch;
+    background-color: $c-gray-light;
+    background-image: url(../../public/ic_search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 4px 4px 0;
+    border: 0;
+    font-size: 0;
+    width: 40px;
+  }
+}

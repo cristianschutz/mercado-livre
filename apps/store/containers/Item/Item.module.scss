@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.bgWhite{
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content{
+  display: flex;
+  margin-bottom: 40px;
+
+  figure {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0 30px 0 0;
+    padding: 0;
+  }
+
+  div{
+    width: 260px;
+  }
+
+  small{
+    font-size: 12px;
+    color: $c-gray;
+    text-transform: capitalize;
+  }
+
+  h1{
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  a,button {
+    background-color: #3483fa;
+    border-color: transparent;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    height: 40px;
+    line-height: 1;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  @media (max-width:  768px){
+    display: block;
+
+    figure{
+      margin-bottom: 20px;
+    }
+
+    div{
+      width: 100%;
+    }
+  }
+}
+
+.description{
+  h3 {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $c-gray;
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.container{
+  align-items: center;
+  display: flex;
+  background: #fff;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+
+.itemFigure{
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+
+  img{
+    position: absolute;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.itemContent{
+  h6{
+    font-size: 22px;
+    align-items: center;
+    display: flex;
+  }
+
+  h3{
+    font-size: 14px;
+  }
+}
+
+.itemFreeShippingIcon{
+  background-image: url(../../public/ic_shipping@2x.png.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 30px;
+  margin-left: 10px;
+  width: 30px;
+}
